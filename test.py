@@ -5,9 +5,7 @@ from pywebio import start_server
 from pywebio.platform.flask import webio_view
 from pywebio import STATIC_PATH
 from flask import Flask,send_from_directory
-import tkinter as tk
-from tkinter.filedialog import askopenfile
-import pandas as pd
+
 
 
 app = Flask(__name__)
@@ -16,7 +14,7 @@ app = Flask(__name__)
 
 def start():
 
-
+        input('hg',type=TEXT)
         put_text('dsdsd')
 
 

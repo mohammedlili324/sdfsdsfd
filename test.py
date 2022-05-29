@@ -22,7 +22,7 @@ def start():
 
 
 app.add_url_rule('/tool','webio.view',webio_view(start)
-                 ,provide_automatic_options=True,methods=['GET','POST','OPTIONS','PUT'])
+                 ,methods=['GET','POST','OPTIONS'])
 
 if __name__== "__main__":
         parser = argparse.ArgumentParser()

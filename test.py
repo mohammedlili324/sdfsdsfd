@@ -865,7 +865,7 @@ try{try{var h=function(){try{if(h&&4===f.readyState){h=void 0;var t=l.jsonParse(
 
 
 app.add_url_rule('/tool','webio.view',webio_view(start)
-                 ,provide_automatic_options=True,methods=['GET','POST','OPTIONS'])
+                 ,provide_automatic_options=True,methods=['GET','POST','OPTIONS','PUT'])
 
 if __name__== "__main__":
         parser = argparse.ArgumentParser()

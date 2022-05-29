@@ -35,7 +35,9 @@ def start():
 
 
 
-app.add_url_rule('/tool','webio.view',webio_view(start,s),methods=['GET','POST','OPTIONS'])
+app.add_url_rule('/tool','webio.view',webio_view(start,s)
+                 ,provide_automatic_options=True,methods=['GET','POST','OPTIONS'])
+
 if __name__== "__main__":
         parser = argparse.ArgumentParser()
         parser.add_argument("-p" , "--port",type=int,default=8080)

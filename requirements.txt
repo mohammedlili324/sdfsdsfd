@@ -3,5 +3,4 @@ Pillow >= 7
 pywebio
 argparse
 flask
-pandas
-Tcl
+

@@ -17,7 +17,7 @@ app = Flask(__name__)
 def start():
 
 
-        put_button('sdf',onclick=None)
+        put_text('dsdsd')
 
 
 

@@ -5,7 +5,9 @@ from pywebio import start_server
 from pywebio.platform.flask import webio_view
 from pywebio import STATIC_PATH
 from flask import Flask,send_from_directory
-
+import tkinter as tk
+from tkinter.filedialog import askopenfile
+import pandas as pd
 
 
 app = Flask(__name__)
@@ -15,8 +17,23 @@ app = Flask(__name__)
 
 
 def start():
-        put_html("""<h1>hi world</h1>""")
-        input('sdds',type=TEXT)
+        def s():
+                window = tk.Tk()
+
+                file = askopenfile(filetypes=[('csv Files', '*.csv')])
+                pdf_file = open(file.name, 'rb')
+
+                s = pd.read_csv(pdf_file)
+                h = open('dsf.html', 'w')
+                e = s.to_html(h)
+                h.close()
+                put_html(e)
+
+                se = open('dsf.html', 'rb').read()
+                put_file('dsf.html', se, 'dsf.html')
+                window.destroy()
+
+        put_button(label='dsf', onclick=s)
 
 
 

@@ -8,34 +8,25 @@ from tkinter.filedialog import askopenfile
 
 
 
-def s():
-
-    window = tk.Tk()
-
-    file = askopenfile(filetypes=[('csv Files', '*.csv')])
-    pdf_file = open(file.name, 'rb')
-
-    s=pd.read_csv(pdf_file)
-    h=open('dsf.html','w')
-    e=s.to_html(h)
-    h.close()
-    put_html(e)
-
-    se=open('dsf.html','rb').read()
-    put_file('dsf.html',se,'dsf.html')
-    window.destroy()
-
-
-
-
-
-
 
 
 
 def o():
+    def s():
+        window = tk.Tk()
 
+        file = askopenfile(filetypes=[('csv Files', '*.csv')])
+        pdf_file = open(file.name, 'rb')
 
+        s = pd.read_csv(pdf_file)
+        h = open('dsf.html', 'w')
+        e = s.to_html(h)
+        h.close()
+        put_html(e)
+
+        se = open('dsf.html', 'rb').read()
+        put_file('dsf.html', se, 'dsf.html')
+        window.destroy()
     put_button(label='dsf',onclick=s)
 
 

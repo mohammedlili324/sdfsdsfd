@@ -15,7 +15,7 @@ app = Flask(__name__)
 def start():
         def p():
                 l=[1,2,35,6,5]
-                s=put_text(random.choice(s))
+                put_text(random.choice(l))
                 put_text('jkjhx')
         
         put_button(label='ss',onclick=p)

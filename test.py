@@ -5,7 +5,7 @@ from pywebio import start_server
 from pywebio.platform.flask import webio_view
 from pywebio import STATIC_PATH
 from flask import Flask,send_from_directory
-
+import random
 
 
 app = Flask(__name__)
@@ -14,7 +14,10 @@ app = Flask(__name__)
 
 def start():
         def p():
+                l=[1,2,35,6,5]
+                s=put_text(random.choice(s))
                 put_text('jkjhx')
+        
         put_button(label='ss',onclick=p)
 
 

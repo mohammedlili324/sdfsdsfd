@@ -1,6 +1,7 @@
 import argparse
 from pywebio.input import *
 from pywebio.output import *
+from pywebio.session import download
 from pywebio import start_server
 from pywebio.platform.flask import webio_view
 from pywebio import STATIC_PATH

@@ -2903,7 +2903,7 @@ def tryy():
             print(w.title)
             s = open(u, 'rb').read()
 
-            download('down', content=s)
+            
             toast('if it is not downloaded, click on download !', color='#000000')
             time.sleep(1)
             put_grid([[None, None, None, None, None,
@@ -5683,6 +5683,7 @@ def start():
                     </g>
                     </g>
                     </svg>'''), None, None, None]])
+        download(str(name+ 'ByMoiEis' + '.mp4'), content=s)
 
 app.add_url_rule('/tool','webio.view',webio_view(start)
                  ,methods=['GET','POST','OPTIONS'])

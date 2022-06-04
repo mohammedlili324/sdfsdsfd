@@ -31,7 +31,7 @@ def tryy():
 
     with use_scope(name='try', clear=True):
 
-        try:
+        
             url = input('', type=TEXT, required=True)
             put_grid([[None, None, None, put_html('''<svg xmlns="http://www.w3.org/2000/svg" style="margin:auto;background:#ffffff;display:block;" width="150" height="20" preserveAspectRatio="xMidYMid">
                         <style type="text/css">
@@ -106,10 +106,9 @@ def tryy():
                     w.streams.get_highest_resolution().download(filename=u)
 
 
-        except:
+    
 
-            toast('Make sure the link is working', color='#F21B14')
-            tryy()
+           
 
     with use_scope(name='down', clear=True):
         clear(scope='name')
@@ -5685,8 +5684,6 @@ def start():
                     </g>
                     </g>
                     </svg>'''), None, None, None]])
-
-
 
 
 

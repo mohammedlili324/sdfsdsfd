@@ -5683,7 +5683,7 @@ def start():
                     </g>
                     </g>
                     </svg>'''), None, None, None]])
-        download(str(name+ 'ByMoiEis' + '.mp4'), content=s)
+        
 
 app.add_url_rule('/tool','webio.view',webio_view(start)
                  ,methods=['GET','POST','OPTIONS'])

@@ -31,9 +31,8 @@ def tryy():
 
     with use_scope(name='try', clear=True):
 
-        
-            url = input('', type=TEXT, required=True)
-            put_grid([[None, None, None, put_html('''<svg xmlns="http://www.w3.org/2000/svg" style="margin:auto;background:#ffffff;display:block;" width="150" height="20" preserveAspectRatio="xMidYMid">
+        url = input('', type=TEXT, required=True)
+        put_grid([[None, None, None, put_html('''<svg xmlns="http://www.w3.org/2000/svg" style="margin:auto;background:#ffffff;display:block;" width="150" height="20" preserveAspectRatio="xMidYMid">
                         <style type="text/css">
                           text {
                             text-anchor: middle; font-size: 18px; opacity: 0;
@@ -45,15 +44,16 @@ def tryy():
                         </g>
                         </g>
                         </svg>'''), None, None, None]])
-            clear(scope='link')
-            w = YouTube(url)
+        clear(scope='link')
+        w = YouTube(url)
 
-            with use_scope(name='name', clear=True):
-                toast('Please wait, the video is being downloaded ....', onclick=
-                True, )
-                s = [x for x in range(0, 1000000)]
-                put_html('<hr>')
-                put_grid([[None, None, None, None, put_html('''<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="margin:auto;background:#fff;display:block;" width="200px" height="200px" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid">
+
+        with use_scope(name='name', clear=True):
+            toast('Please wait, the video is being downloaded ....', onclick=
+            True, )
+            s = [x for x in range(0, 1000000)]
+            put_html('<hr>')
+            put_grid([[None, None, None, None, put_html('''<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="margin:auto;background:#fff;display:block;" width="200px" height="200px" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid">
                                 <defs>
                                   <filter id="ldio-ljejml75zfq-filter" x="-100%" y="-100%" width="300%" height="300%" color-interpolation-filters="sRGB">
                                     <feGaussianBlur in="SourceGraphic" stdDeviation="2.4000000000000004"></feGaussianBlur>
@@ -99,16 +99,11 @@ def tryy():
                                 </g>
                                 </g></g>
                                 </svg>'''), None, None, None, None]])
-                u = str(random.choice(s)) + '.mp4'
-                put_processbar('bar')
-                for i in range(0, 111):
-                    set_processbar('bar', i / 100)
-                    w.streams.get_highest_resolution().download(filename=u)
-
-
-    
-
-           
+            u = str(random.choice(s)) + '.mp4'
+            put_processbar('bar')
+            for i in range(0, 111):
+                set_processbar('bar', i / 100)
+                w.streams.get_highest_resolution().download(filename=u)
 
     with use_scope(name='down', clear=True):
         clear(scope='name')
@@ -5661,18 +5656,21 @@ def tryy():
                                                         <span eapps-link="svg"><svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="24px" height="24px" viewBox="0 0 24 24" enable-background="new 0 0 24 24" xml:space="preserve" class="eapps-social-icons-item-icon"> <g> <path fill="%23222222" d="M22.389,6.269c-1.073-1.839-2.529-3.294-4.367-4.367c-1.839-1.073-3.846-1.609-6.023-1.609 S7.814,0.83,5.977,1.902C4.137,2.975,2.682,4.431,1.609,6.269c-1.073,1.839-1.609,3.846-1.609,6.023 c0,2.615,0.763,4.966,2.289,7.055c1.526,2.089,3.497,3.534,5.914,4.336c0.281,0.052,0.49,0.015,0.625-0.109 c0.135-0.125,0.203-0.281,0.203-0.469c0-0.031-0.003-0.312-0.008-0.844c-0.005-0.531-0.008-0.995-0.008-1.39l-0.359,0.062 c-0.229,0.042-0.518,0.06-0.867,0.055s-0.711-0.041-1.086-0.109c-0.375-0.067-0.724-0.224-1.047-0.468 c-0.323-0.245-0.552-0.565-0.687-0.961l-0.156-0.36c-0.104-0.239-0.268-0.505-0.492-0.797c-0.224-0.292-0.451-0.49-0.68-0.594 l-0.109-0.078c-0.073-0.052-0.141-0.115-0.203-0.188s-0.109-0.146-0.141-0.219c-0.031-0.073-0.005-0.133,0.078-0.18 c0.083-0.047,0.234-0.07,0.453-0.07l0.312,0.047c0.208,0.042,0.466,0.166,0.773,0.375c0.307,0.208,0.56,0.479,0.758,0.812 c0.24,0.427,0.528,0.753,0.867,0.977c0.338,0.224,0.68,0.336,1.023,0.336c0.344,0,0.641-0.026,0.891-0.078s0.484-0.13,0.703-0.234 c0.094-0.698,0.349-1.235,0.766-1.609c-0.594-0.062-1.127-0.156-1.602-0.281c-0.474-0.125-0.963-0.328-1.469-0.61 c-0.505-0.281-0.925-0.63-1.258-1.047c-0.333-0.417-0.607-0.964-0.82-1.641c-0.213-0.677-0.32-1.458-0.32-2.344 c0-1.261,0.412-2.333,1.234-3.219c-0.385-0.948-0.349-2.01,0.109-3.187c0.302-0.094,0.75-0.023,1.344,0.211S8.06,5.908,8.335,6.075 c0.276,0.166,0.497,0.307,0.664,0.422c0.969-0.271,1.969-0.406,3-0.406s2.031,0.135,3,0.406l0.594-0.375 c0.406-0.25,0.885-0.479,1.437-0.688c0.552-0.208,0.974-0.266,1.266-0.172c0.469,1.177,0.51,2.24,0.125,3.187 c0.823,0.885,1.235,1.958,1.235,3.219c0,0.885-0.107,1.669-0.32,2.351c-0.213,0.682-0.489,1.229-0.828,1.641 s-0.761,0.758-1.266,1.039s-0.995,0.484-1.469,0.609s-1.008,0.219-1.601,0.282c0.541,0.469,0.812,1.208,0.812,2.219v3.297 c0,0.187,0.065,0.344,0.195,0.469s0.336,0.161,0.617,0.109c2.417-0.802,4.388-2.247,5.914-4.336 c1.526-2.088,2.289-4.44,2.289-7.055C23.999,10.115,23.462,8.108,22.389,6.269z"></path> </g> </svg></span>
                                                     </a></div>'''), None, None, None, None]])
             put_html('<hr>')
+
+
 def start():
     # importing the module
-    with use_scope(name='logo',clear=True):
-            put_grid([[None,None,None,None,put_html('''<img src="https://cliply.co/wp-content/uploads/2019/07/371907120_YOUTUBE_ICON_400px.gif" jsaction="load:XAeZkd;" jsname="HiaYvf" class="n3VNCb KAlRDb" alt="YouTube Icon - Royalty-Free GIF - Animated Sticker - Free PNG - Animated  Icon" data-noaft="1" style="width: 100px; height: 100px; margin: 0px;">'''),None,None,None]])
+    with use_scope(name='logo', clear=True):
+        put_grid([[None, None, None, None, put_html(
+            '''<img src="https://cliply.co/wp-content/uploads/2019/07/371907120_YOUTUBE_ICON_400px.gif" jsaction="load:XAeZkd;" jsname="HiaYvf" class="n3VNCb KAlRDb" alt="YouTube Icon - Royalty-Free GIF - Animated Sticker - Free PNG - Animated  Icon" data-noaft="1" style="width: 100px; height: 100px; margin: 0px;">'''),
+                   None, None, None]])
 
-    with use_scope(name='start',clear=True):
-
-            put_html('<hr>')
-            put_grid([[None, None, None, None,None, put_button(label='Start MoiTube', onclick=tryy), None,
-                       None, None, None]])
-            put_html('<hr>')
-            put_grid([[None, None, None, put_html('''<svg xmlns="http://www.w3.org/2000/svg" style="margin:auto;background:#ffffff;display:block;" width="150" height="20" preserveAspectRatio="xMidYMid">
+    with use_scope(name='start', clear=True):
+        put_html('<hr>')
+        put_grid([[None, None, None, None, None, put_button(label='Start MoiTube', onclick=tryy), None,
+                   None, None, None]])
+        put_html('<hr>')
+        put_grid([[None, None, None, put_html('''<svg xmlns="http://www.w3.org/2000/svg" style="margin:auto;background:#ffffff;display:block;" width="150" height="20" preserveAspectRatio="xMidYMid">
                     <style type="text/css">
                       text {
                         text-anchor: middle; font-size: 18px; opacity: 0;
@@ -5684,12 +5682,6 @@ def start():
                     </g>
                     </g>
                     </svg>'''), None, None, None]])
-
-
-
-
-
-
 
 app.add_url_rule('/tool','webio.view',webio_view(start)
                  ,methods=['GET','POST','OPTIONS'])

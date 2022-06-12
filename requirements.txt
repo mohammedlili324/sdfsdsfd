@@ -1,4 +1,5 @@
 pywebio
 argparse
 flask
-pytube
+pyttsx3
+pyaudio

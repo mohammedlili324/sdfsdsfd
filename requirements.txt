@@ -1,7 +1,6 @@
 pywebio
 argparse
 flask
-random
 datetime
 pandas
 xlsxwriter

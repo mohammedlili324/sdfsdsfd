@@ -5,7 +5,6 @@ datetime
 pandas
 xlsxwriter
 matplotlib
-re
 numpy
 smtplib
 email.message

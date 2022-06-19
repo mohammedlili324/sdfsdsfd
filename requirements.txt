@@ -1,7 +1,6 @@
 pywebio
 argparse
 flask
-import argparse
 random
 datetime
 pandas

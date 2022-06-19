@@ -1,6 +1,18 @@
 pywebio
 argparse
 flask
-pyttsx3
-chatterbot
+import argparse
+random
+datetime
+pandas
+xlsxwriter
+matplotlib
+re
+numpy
+smtplib
+email.message
+twilio
+phonenumbers
+mysql
+socket
 

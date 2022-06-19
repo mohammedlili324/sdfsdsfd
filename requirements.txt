@@ -6,7 +6,6 @@ pandas
 xlsxwriter
 matplotlib
 numpy
-smtplib
 email.message
 twilio
 phonenumbers

@@ -1,14 +1,9 @@
-from pywebio.input import *
-from pywebio.output import *
-from pywebio.pin import *
-from pywebio.platform import *
 import argparse
 from pywebio.input import *
 from pywebio.output import *
 from pywebio.session import download
 from pywebio import start_server
 from pywebio.platform.flask import webio_view
-from pywebio.platform import *
 from pywebio import STATIC_PATH
 from flask import Flask,send_from_directory
 import cv2
@@ -19,7 +14,7 @@ def tk():
     ret, im = a.read()
     cv2.imwrite('asdasd.png', im)
 
-    img = open(r'C:\Users\moi data siencets\Desktop\moi21\face_and_eye_detection_app\asdasd.png', 'rb').read()
+    img = open(r'asdasd.png', 'rb').read()
     popup('',put_image(img))
 
 def start():
@@ -30,6 +25,7 @@ def start():
 
 app.add_url_rule('/tool','webio.view',webio_view(start)
                  ,methods=['GET','POST','OPTIONS'])
+
 
 if __name__== "__main__":
         parser = argparse.ArgumentParser()

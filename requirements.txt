@@ -1,13 +1,5 @@
 pywebio
 argparse
 flask
-datetime
-pandas
-xlsxwriter
-matplotlib
-numpy
-twilio
-phonenumbers
-mysql
-
+opencv
 
